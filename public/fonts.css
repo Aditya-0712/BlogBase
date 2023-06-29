@@ -1,0 +1,24 @@
+@font-face {
+    font-family: helvetica-reg;
+    src: url(fonts/Helvetica-Reg.otf);
+}
+
+@font-face {
+    font-family: helvetica-med;
+    src: url(fonts/Helvetica-Med.otf);
+}
+
+@font-face {
+    font-family: helvetica-bold;
+    src: url(fonts/Helvetica-Bold.otf);
+}
+
+@font-face {
+    font-family: helvetica-med-italic;
+    src: url(fonts/Helvetica-Med-Italic.otf);
+}
+
+@font-face {
+    font-family: helvetica-bold-italic;
+    src: url(fonts/Helvetica-Bold-Italic.otf);
+}
