@@ -311,7 +311,7 @@ body
         margin:40px auto 0px auto;
     }
 
-    .pcbtn
+    .pcbtn1 , .pcbtn2
     {
         display:flex;
         height: 21px;
@@ -320,9 +320,29 @@ body
         font-size:16px;
         color:white;
         background-color: blueviolet;
+        padding:8px 51px 8px 51px;
         border-radius: 50px;
         margin:0px 70px 0px 0px;
         text-decoration: none;
+    }
+
+    .pcbtn2 
+    {
+        color:#3a3a3a; 
+        background-color: white; 
+        border:1px solid #3a3a3a; 
+        padding:7px 39px 7px 39px; 
+        margin-right: 0;
+    }
+
+    .lns .pcbtn1:hover
+    {
+        background-color: rgb(92, 29, 151);
+    }
+
+    .lns .pcbtn2:hover 
+    {
+        background-color: rgb(192, 191, 191);
     }
 
     .right
