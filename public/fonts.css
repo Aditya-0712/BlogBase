@@ -22,3 +22,33 @@
     font-family: helvetica-bold-italic;
     src: url(fonts/Helvetica-Bold-Italic.otf);
 }
+
+@font-face {
+    font-family: poppins-reg;
+    src: url(fonts/poppins.regular.ttf);
+}
+
+@font-face {
+    font-family: poppins-med;
+    src: url(fonts/poppins.semibold.ttf);
+}
+
+@font-face {
+    font-family: poppins-med;
+    src: url(fonts/poppins.bold.ttf);
+}
+
+@font-face {
+    font-family: lexend-reg;
+    src: url(fonts/Lexend-Regular.ttf);
+}
+
+@font-face {
+    font-family: lexend-med;
+    src: url(fonts/Lexend-Medium.ttf);
+}
+
+@font-face {
+    font-family: lexend-bold;
+    src: url(fonts/Lexend-Bold.ttf);
+}
