@@ -86,11 +86,11 @@ body
     border-radius:20px;
     margin:0;
     background-image: linear-gradient(
-        135deg,
-        hsl(0deg 0% 23%) 55%,
-        hsl(260deg 64% 44%) 100%,
-        hsl(245deg 100% 59%) 102%,
-        hsl(221deg 100% 49%) 100%
+        125deg,
+        hsl(0deg 0% 100%) 0%,
+        hsl(220deg 100% 77%) 63%,
+        hsl(220deg 100% 77%) 80%,
+        hsl(0deg 0% 100%) 100%
     );
 }
 
@@ -99,7 +99,7 @@ body
     display:flex;
     font-family:lexend-reg;
     font-size:16px;
-    color:white;
+    color:black;
     margin:0px auto 0px 0px;
 }
 
@@ -115,7 +115,7 @@ body
     width: 30px;
     height: 30px;
     margin:auto 0px auto 0px;
-    fill:blueviolet;
+    fill:#3a3a3a;
 }
 
 .inp div input 
@@ -125,7 +125,7 @@ body
     margin:auto 0px auto 20px;
     height: 20px;
     background-color: transparent;
-    color:white;
+    color:black;
     font-family: lexend-reg;
     font-size:16px;
     border:0;
