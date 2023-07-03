@@ -24,6 +24,11 @@
 }
 
 @font-face {
+    font-family: helvetica-light-italic;
+    src: url(fonts/Helvetica-Light-Italic.otf);
+}
+
+@font-face {
     font-family: poppins-reg;
     src: url(fonts/poppins.regular.ttf);
 }
