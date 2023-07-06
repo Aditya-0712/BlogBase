@@ -175,6 +175,11 @@ body
     margin:0px auto 0px 10px;
 }
 
+.pcmain
+{
+    display:none;
+}
+
 @media screen and (min-width:800px)
 {
     .logo, .title, .welcome, .wel_desc, .mob_form, .submit

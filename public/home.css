@@ -1,0 +1,133 @@
+*{-webkit-tap-highlight-color: transparent;}
+
+body 
+{
+    display:flex;
+    flex-direction: column;
+    margin:0;
+    width: 100%;
+    font-size:0;
+}
+
+.topbar 
+{
+    display:flex;
+    width:100%;
+    height: auto;
+    margin:10px auto 0px 0px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    position: fixed;
+    z-index: 1;
+}
+
+.topbar img 
+{
+    display:flex;
+    width:30px;
+    height: auto;
+    margin:auto 0px auto 20px;
+}
+
+.topbar p
+{
+    display:flex;
+    font-size:25px;
+    font-family: helvetica-bold;
+    color:black;
+    margin:auto auto auto 10px;
+}
+
+.ham , .hamopen
+{
+    display:flex;
+    flex-direction: column;
+    margin:auto 20px auto auto;
+    cursor: pointer;
+    padding: 5px;
+    position: relative;
+    bottom: 3px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.ham div , .hamopen div
+{
+    display: flex;
+    width:30px;
+    height: 5px;
+    background-color:#40128B;
+    border-radius: 50px;
+    margin:5px 0px 0px 0px;
+    transition: 0.5s;
+}
+
+.hamopen div:nth-child(1)
+{
+    transform: translateY(10px) rotate(45deg);
+}
+
+.hamopen div:nth-child(2)
+{
+    transform: translateX(60px);
+}
+
+.hamopen div:nth-child(3)
+{
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+.sidebar , .sideopen
+{
+    display:flex;
+    flex-direction: column;
+    width:0px;
+    background-color: #3a3a3a;
+    height:100%;
+    position: fixed;
+    margin:0;
+    overflow: hidden;
+    transition: 0.5s;
+    position: fixed;
+    z-index: 2;
+}
+
+.sideopen
+{
+    width:300px;
+}
+
+.user_name
+{
+    display:flex;
+    margin:30px auto 0px auto;
+    width:fit-content;
+}
+
+.user_name svg 
+{
+    width:35px;
+    height: auto;
+    margin:auto 0px auto 0px;
+    fill:blueviolet;
+}
+
+.user_name p 
+{
+    display:flex;
+    font-family: helvetica-med;
+    font-size:25px;
+    color:white;
+    margin:auto 0px auto 15px;
+}
+
+.sidebar a, .sideopen a
+{
+    display:flex;
+    font-size: 25px;
+    width:280px;
+    font-family: helvetica-med;
+    color:white;
+    margin:20px auto 0px 20px;
+    text-decoration: none;
+}
