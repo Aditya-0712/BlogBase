@@ -217,6 +217,68 @@ body
     color:#3a3a3a;
 }
 
+.date 
+{
+    display:flex;
+    font-family: helvetica-reg;
+    font-size:13px;
+    color:rgba(0, 0, 0, 0.3);
+    margin:15px 0px 0px 0px;
+}
+
+.likes
+{
+    display:flex;
+    width:100%;
+    margin:10px 0px 0px 0px;
+}
+
+.likes svg
+{
+    display:flex;
+    width:25px;
+    height:auto;
+    fill:#3a3a3a;
+    cursor: pointer;
+}
+
+.likes p 
+{
+    display:flex;
+    font-family: helvetica-reg;
+    font-size:16px;
+    color:rgba(0, 0, 0, 0.3);
+    margin:auto 0px auto 10px;
+    user-select: none;
+}
+
+.add 
+{
+    display:flex;
+    margin:0;
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background-color: blueviolet;
+    width:30px;
+    height:30px;
+    padding: 7px;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.add svg 
+{
+    width:30px;
+    height: 30px;
+    fill:#3a3a3a;
+}
+
+.add:hover 
+{
+    background-color: rgb(104, 33, 171);
+}
+
 .topbar .user_name , .topbar a
 {
     display: none;
