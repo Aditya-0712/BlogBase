@@ -1,0 +1,141 @@
+*{-webkit-tap-highlight-color: transparent; display:flex; text-decoration: none;}
+
+title{display: none;}
+
+body
+{
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    font-size: 0;
+    background-image: url(../images/body_bg9.png);
+    background-size: cover;
+    height: 600px;
+}
+
+.back
+{
+    margin:10px auto 0px 15px;
+}
+
+.back svg 
+{
+    width: 35px;
+    height: auto;
+    fill:blueviolet;
+}
+
+.header
+{   
+    flex-direction: column;
+    margin:60px auto 0px auto;
+}
+
+.header p:nth-child(1)
+{
+    font:30px helvetica-bold;
+    margin:0px auto 0px auto;
+    color:#3a3a3a;
+}
+
+.header p:nth-child(2)
+{
+    font:16px helvetica-reg;
+    margin:5px auto 0px auto;
+    color:rgba(0, 0, 0, 0.4);
+}
+
+form
+{
+    flex-direction: column;
+    margin:30px auto 0px auto;
+}
+
+.inp
+{
+    margin: 15px auto 0px auto;
+}
+
+.inp svg 
+{
+    width: 21px;
+    height: 21px;
+    background-color: white;
+    border-radius: 15px 0px 0px 15px;
+    fill:#3a3a3a;
+    margin: auto 0px auto 0px;
+    padding: 12px 0px 9px 15px;
+    border: 2px solid black;
+    border-right: 0px;
+}
+
+input[type="text"], input[type="password"]
+{
+    font:18px helvetica-reg;
+    color:#3a3a3a;
+    width:258px;
+    border:none;
+    border-radius: 0px 15px 15px 0px;
+    background-color: white;
+    padding: 10px 10px 10px 15px;
+    margin: 0;
+    border:2px solid black;
+    border-left: 0px;
+}
+
+input[type="text"]::placeholder, input[type="password"]::placeholder
+{
+    color:rgba(0, 0, 0, 0.5);
+    font:15px helvetica-reg;
+}
+
+input[type="text"]:focus, input[type="password"]:focus
+{
+    outline: none;
+}
+
+.error
+{
+    font:11px helvetica-light-italic;
+    color:red;
+    margin:5px auto 0px 5px;
+}
+
+.eye
+{
+    width:18px;
+    height: auto;
+    position: relative;
+    bottom:30px;  /*bottom:46px When error */
+    fill:#3a3a3a;
+    margin:0px 15px 0px auto;
+    cursor: pointer;
+}
+
+input[type="submit"]
+{
+    padding:8px 40px 8px 40px;
+    border-radius: 50px;
+    border:none;
+    color:white;
+    font:15px helvetica-med;
+    width: fit-content;
+    margin:35px auto 0px auto;
+    cursor: pointer;
+    box-shadow: 0 0 20px #eee;
+    background-color: blueviolet;
+}
+
+input[type="submit"]:hover
+{
+    background-color: rgb(105, 34, 172);
+}
+
+@media screen and (max-width:800px)
+{
+    body 
+    {
+        height: 920px;
+        background-position: -5px 0px;
+    }
+}
