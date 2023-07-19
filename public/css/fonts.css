@@ -1,59 +1,59 @@
 @font-face {
     font-family: helvetica-reg;
-    src: url(fonts/Helvetica-Reg.otf);
+    src: url(../fonts/Helvetica-Reg.otf);
 }
 
 @font-face {
     font-family: helvetica-med;
-    src: url(fonts/Helvetica-Med.otf);
+    src: url(../fonts/Helvetica-Med.otf);
 }
 
 @font-face {
     font-family: helvetica-bold;
-    src: url(fonts/Helvetica-Bold.otf);
+    src: url(../fonts/Helvetica-Bold.otf);
 }
 
 @font-face {
     font-family: helvetica-med-italic;
-    src: url(fonts/Helvetica-Med-Italic.otf);
+    src: url(../fonts/Helvetica-Med-Italic.otf);
 }
 
 @font-face {
     font-family: helvetica-bold-italic;
-    src: url(fonts/Helvetica-Bold-Italic.otf);
+    src: url(../fonts/Helvetica-Bold-Italic.otf);
 }
 
 @font-face {
     font-family: helvetica-light-italic;
-    src: url(fonts/Helvetica-Light-Italic.otf);
+    src: url(../fonts/Helvetica-Light-Italic.otf);
 }
 
 @font-face {
     font-family: poppins-reg;
-    src: url(fonts/poppins.regular.ttf);
+    src: url(../fonts/poppins.regular.ttf);
 }
 
 @font-face {
     font-family: poppins-med;
-    src: url(fonts/poppins.semibold.ttf);
+    src: url(../fonts/poppins.semibold.ttf);
 }
 
 @font-face {
     font-family: poppins-med;
-    src: url(fonts/poppins.bold.ttf);
+    src: url(../fonts/poppins.bold.ttf);
 }
 
 @font-face {
     font-family: lexend-reg;
-    src: url(fonts/Lexend-Regular.ttf);
+    src: url(../fonts/Lexend-Regular.ttf);
 }
 
 @font-face {
     font-family: lexend-med;
-    src: url(fonts/Lexend-Medium.ttf);
+    src: url(../fonts/Lexend-Medium.ttf);
 }
 
 @font-face {
     font-family: lexend-bold;
-    src: url(fonts/Lexend-Bold.ttf);
+    src: url(../fonts/Lexend-Bold.ttf);
 }
