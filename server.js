@@ -11,6 +11,8 @@ const postRoute = require('./routes/slash-post');
 const accRoute = require('./routes/slash-account');
 const blogRoute = require('./routes/slash-myblogs');
 
+app.set('view engine', 'ejs');
+
 app.use(BP.urlencoded({extended:true}));
 app.use(exp.static(path.join('public')));
 
