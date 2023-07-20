@@ -1,0 +1,147 @@
+*{-webkit-tap-highlight-color: transparent; display:flex; text-decoration: none;}
+
+title{display: none;}
+
+body
+{
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    font-size: 0;
+}
+
+.back
+{
+    margin:10px auto 0px 15px;
+}
+
+.back svg 
+{
+    width: 35px;
+    height: auto;
+    fill:blueviolet;
+}
+
+.logo
+{
+    margin:20px auto 0px auto;
+}
+
+.logo img
+{
+    width: 30px;
+    height: auto;
+    margin:auto 0px auto 0px;
+}
+
+.logo p 
+{
+    font:28px helvetica-bold;
+    margin:auto 0px auto 10px;
+    background-image: linear-gradient(
+        90deg,
+        hsl(0deg 0% 23%) 7%,
+        hsl(283deg 30% 32%) 62%,
+        hsl(282deg 54% 41%) 74%,
+        hsl(283deg 88% 45%) 79%,
+        hsl(285deg 79% 50%) 83%,
+        hsl(288deg 88% 55%) 88%,
+        hsl(290deg 98% 59%) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    background-size: cover;
+}
+
+form
+{
+    flex-direction: column;
+    padding:10px 20px 10px 20px;
+    margin:40px auto 100px auto;
+    border-radius: 5px;
+    border:1px solid rgba(0, 0, 0, 0.3);
+}
+
+.header
+{
+    font:25px helvetica-reg;
+    color:black;
+    margin:5px auto 0px 0px;
+}
+
+.label
+{
+    font:15px helvetica-reg;
+    color:#3a3a3a;
+    margin:10px auto 0px 0px;
+}
+
+input[type="text"]
+{
+    border:1px solid rgba(0, 0, 0, 1);
+    margin:5px auto 0px 0px;
+    font:12px helvetica-reg;
+    width: 250px;
+    max-width: 250px;
+    padding: 3px 0px 3px 5px;
+}
+
+input[type="text"]:focus
+{
+    outline: none;
+}
+
+textarea
+{
+    resize: none;
+    margin:5px auto 0px 0px;
+    overflow-y: scroll;
+    width:250px;
+    max-width: 250px;
+    padding: 3px 0px 3px 5px;
+    border:1px solid rgba(0, 0, 0, 1);
+    height: 300px;
+    max-height: 300px;
+    word-wrap: break-word;
+    font:13px helvetica-reg;
+}
+
+textarea:focus
+{
+    outline: none;
+}
+
+input[type="submit"]
+{
+    padding:8px 40px 8px 40px;
+    border-radius: 50px;
+    border:none;
+    color:white;
+    font:15px helvetica-med;
+    width: fit-content;
+    margin:20px auto 0px auto;
+    cursor: pointer;
+    box-shadow: 0 0 20px #eee;
+    background-color: blueviolet;
+}
+
+input[type="submit"]:hover
+{
+    background-color: rgb(105, 34, 172);
+}
+
+@media screen and (min-width:800px)
+{
+    input[type="text"], textarea
+    {
+        width:700px;max-width: 700px;
+    }
+
+    textarea
+    {
+        height: 400px;
+        max-height: 400px;
+    }
+}
