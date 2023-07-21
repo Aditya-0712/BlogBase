@@ -10,6 +10,7 @@ const homeRoute = require('./routes/slash-home');
 const postRoute = require('./routes/slash-post');
 const accRoute = require('./routes/slash-account');
 const blogRoute = require('./routes/slash-myblogs');
+const detailsRoute = require('./routes/slash-details');
 
 app.set('view engine', 'ejs');
 
@@ -23,6 +24,7 @@ app.use(homeRoute);
 app.use(postRoute);
 app.use(accRoute);
 app.use(blogRoute);
+app.use(detailsRoute);
 
 app.use((req,res) => {
     res.send('<h1>Page not found error 404</h1>');

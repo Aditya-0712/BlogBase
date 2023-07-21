@@ -1,0 +1,110 @@
+*{-webkit-tap-highlight-color: transparent; display:flex; text-decoration: none;}
+
+title{display: none;}
+
+body
+{
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    font-size: 0;
+}
+
+.back
+{
+    margin:10px auto 0px 15px;
+}
+
+.back svg 
+{
+    width: 35px;
+    height: auto;
+    fill:blueviolet;
+}
+
+.post
+{
+    margin:20px auto 0px auto;
+    border-radius: 20px;
+    padding: 10px;
+    border:1px solid rgba(0, 0, 0, 0.3);
+    width:300px;
+    max-width: 300px;
+    flex-direction: column;
+}
+
+.ptop 
+{
+    width:100%;
+    margin:0;
+}
+
+.ptop svg 
+{
+    width:30px;
+    height: auto;
+    margin:10px 0px auto 10px;
+}
+
+.ptop div 
+{
+    flex-direction: column;
+}
+
+.user
+{
+    font:23px helvetica-med;
+    color:black;
+    margin:0px auto 0px 20px;
+}
+
+.blog_title
+{
+    font:21px helvetica-med;
+    color:#3a3a3a;
+    margin:10px auto 0px 20px;
+}
+
+.content
+{
+    font:17px helvetica-reg;
+    color:black;
+    margin:20px auto 0px auto;
+    max-width: 290px;
+    height: auto;
+    word-wrap: break-word;
+}
+
+.likes
+{
+    margin:10px auto 0px 10px;
+}
+
+.likes svg 
+{
+    width:20px;
+    height: auto;
+    cursor: pointer;
+    margin:auto 10px auto 0px;
+}
+
+.likes p 
+{
+    font:16px helvetica-reg;
+    color:#3a3a3a;
+    margin:auto 0px auto 0px;
+}
+
+@media screen and (min-width:800px) 
+{
+    .post
+    {
+        width:800px;
+        max-width: 800px;
+    }
+
+    .content
+    {
+        max-width: 780px;
+    }
+}
