@@ -3,13 +3,15 @@ const addProfile = require('../models/credentials');
 const route = exp.Router();
 
 route.get('/account', (req,res) => {
-    const NAME = addProfile.getUser();
-    const EMAIL = addProfile.getEmail();
-    const PASS = addProfile.getPass();
-    const NO = addProfile.getBlogs();
 
-    const data = {NAME:NAME, EMAIL:EMAIL, PASS:PASS, NUM:NO.length};
+    const curr = addProfile.getCurrentUser();
 
+    const n = curr[0].USERNAME;
+    const e = curr[0].EMAIL;
+    const p = curr[0].PASSWORD;
+    const b = curr[0].BLOGS;
+
+    const data = {NAME:n, EMAIL:e, PASS:p, NUM:b.length};
     res.render('account', data);
 })
 

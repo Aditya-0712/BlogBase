@@ -2,7 +2,6 @@ const exp = require('express');
 const route = exp.Router();
 const path = require('path');
 const addProfile = require('../models/credentials');
-const e = require('express');
 
 const pattern = new RegExp('@gmail.com');
 
@@ -42,7 +41,7 @@ route.post('/register', (req,res) => {
     {
         const obj = new addProfile(uSeR, eMaIl, pAsS);
         obj.save();
-        res.sendFile(path.join(__dirname, '../', 'views', 'home.html'));
+        res.redirect('/home');
     }
     else
     {

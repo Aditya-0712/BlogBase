@@ -11,28 +11,32 @@ route.post('/login', (req,res) => {
     var f1,f2;
     f1=f2=0;
 
-    const user_list = addProfile.getUser();
-    const email_list = addProfile.getEmail();
-    const pass_list = addProfile.getPass();
+    const all = addProfile.getAllUsers();
+    const tmpPass = req.body.PASSWORD;
 
     let i=0;
-    for (i; i<user_list.length; i++)
+    for (i; i<all.length; i++)
     {
-        if(req.body.USER_EMAIL == user_list[i] || req.body.USER_EMAIL == email_list[i])
+        if(req.body.USER_EMAIL == all[i].USERNAME || req.body.USER_EMAIL == all[i].EMAIL)
         {
             f1=1;
+            if(tmpPass == all[i].PASSWORD)
+            {
+                f2=1;
+            }
             break;
         }
     }
 
-    if(req.body.PASSWORD == pass_list[i])
-    {
-        f2=1;
-    }
-
     if (f1==1 && f2==1)
     {
-        res.sendFile(path.join(__dirname, '../', 'views', 'home.html'));
+        const u = all[i].USERNAME;
+        const e = all[i].EMAIL;
+        const p = all[i].PASSWORD;
+        const b = all[i].BLOGS;
+
+        addProfile.saveCurrent(u,e,p,b);
+        res.redirect('/home');
     }
     else 
     {

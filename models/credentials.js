@@ -1,8 +1,5 @@
-const user_list = [];
-const email_list = [];
-const pass_list = [];
-const blogIDs = [];
-
+const arr = [];
+var curr = [];
 module.exports = class addProfile
 {
     constructor(user,email,pass)
@@ -14,18 +11,32 @@ module.exports = class addProfile
 
     save()
     {
-        user_list.push(this.user);
-        email_list.push(this.email);
-        pass_list.push(this.pass);
+        const tmp = {USERNAME:this.user, EMAIL:this.email, PASSWORD:this.pass, BLOGS:[]};
+        arr.push(tmp);
+        curr = [];
+        curr.push(tmp);
     }
 
-    saveBlog(id)
+    static saveCurrent(u,e,p,b)
     {
-        blogIDs.push(id);
+        const tmp = {USERNAME:u, EMAIL:e, PASSWORD:p, BLOGS:b};
+        curr = [];
+        curr.push(tmp);
     }
 
-    static getUser(){return user_list};
-    static getEmail(){return email_list};
-    static getPass(){return pass_list};
-    static getBlogs(){return blogIDs};
+    static saveBlog(id, user)
+    {
+        let i=0;
+        for (i; i<arr.length; i++)
+        {
+            if (user == arr[i].USERNAME)
+            {
+                arr[i].BLOGS.push(id);
+                break;
+            }
+        }
+    }
+
+    static getAllUsers(){return arr};
+    static getCurrentUser(){return curr};
 }
