@@ -1,9 +1,12 @@
 const exp = require('express');
+const newBlog = require('../models/blog');
 const route = exp.Router();
-const path = require('path');
 
 route.get('/home', (req,res) => {
-    res.sendFile(path.join(__dirname, '../', 'views', 'home.html'));
+    const arr = newBlog.getAllBLogs();
+    const data ={arr:arr};
+
+    res.render('home', data);
 })
 
 module.exports = route;

@@ -9,12 +9,12 @@ route.get('/post', (req,res) => {
 })
 
 route.post('/post', (req,res) => {
-    const obj = new newBlog(req.body.TITLE, req.body.BLOG);
+    const currProfile = addProfile.getCurrentUser();
+    
+    const obj = new newBlog(currProfile[0].USERNAME, req.body.TITLE, req.body.BLOG);
     obj.save();
 
     const latestBlog = newBlog.getLastBlog();
-
-    const currProfile = addProfile.getCurrentUser();
 
     addProfile.saveBlog(latestBlog[0].ID, currProfile[0].USERNAME); 
     res.redirect('/home');

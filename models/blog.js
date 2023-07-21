@@ -3,8 +3,9 @@ var currBlog = [];
 
 module.exports = class newBlog
 {
-    constructor(title, content)
+    constructor(user, title, content)
     {
+        this.user = user;
         this.title = title;
         this.content = content;
         this.id = Math.random().toString();
@@ -12,7 +13,7 @@ module.exports = class newBlog
 
     save()
     {
-        const tmp = {TITLE:this.title, CONTENT:this.content, ID:this.id};
+        const tmp = {USER:this.user, TITLE:this.title, CONTENT:this.content, ID:this.id};
         arr.push(tmp);
         currBlog = [];
         currBlog.push(tmp);

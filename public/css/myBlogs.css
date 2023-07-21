@@ -261,6 +261,13 @@ body
     background-color: rgb(107, 34, 176);
 }
 
+.null
+{
+    font:17px helvetica-reg;
+    color:rgba(0, 0, 0, 0.4);
+    margin:30px auto 0px auto;
+}
+
 @media screen and (min-width:800px)
 {
     .topbar
