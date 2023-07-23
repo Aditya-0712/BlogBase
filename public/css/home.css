@@ -153,7 +153,6 @@ body
 
 .post
 {
-    cursor: pointer;
     margin:20px auto 0px auto;
     border-radius: 20px;
     padding: 10px;
@@ -161,11 +160,6 @@ body
     width:300px;
     max-width: 300px;
     flex-direction: column;
-}
-
-.post:hover
-{
-    background-color: rgb(235, 235, 235);
 }
 
 .ptop 
@@ -230,6 +224,18 @@ body
     font:16px helvetica-reg;
     color:#3a3a3a;
     margin:auto 0px auto 0px;
+}
+
+.likes a 
+{
+    font:15px helvetica-reg;
+    color:blue;
+    margin:auto 0px auto 20px;
+}
+
+.likes a:hover
+{
+    text-decoration: underline;
 }
 
 .pctopbar
