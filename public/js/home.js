@@ -37,6 +37,19 @@ linq[2].onmouseout = function()
     under[2].style.transform = "translateX(-100%)";
 }
 
+var content = document.getElementsByClassName('content');
+for (let i=0; i<content.length; i++)
+{
+    if (content[i].style.height<'300px')
+    {
+        content[i].style.overflowY = "auto";
+    }
+    else 
+    {
+        content[i].style.overflowY = "scroll";
+    }
+}
+
 var like = document.querySelectorAll(".likes svg")[0];
 var count = document.querySelectorAll('.likes p')[0];
 
