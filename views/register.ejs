@@ -26,7 +26,11 @@
                 <input type="text" name="USERNAME" placeholder="Enter Username">
             </div>
             <% if(flag1==0) { %>
-                <p class="error" style="display:flex">Username must be atleast 4 characters</p>
+                <% if(uType == 1) { %>
+                    <p class="error" style="display:flex">This Username is already registered</p>
+                <% } else{ %>
+                    <p class="error" style="display:flex">Username must be atleast 4 characters</p>
+                <% } %>
             <% } else { %>
                 <p class="error" style="display:none">Username must be atleast 4 characters</p>
             <% } %>
@@ -37,7 +41,11 @@
                 <input type="text" name="EMAIL" placeholder="Enter Email-Id">
             </div>
             <% if(flag2==0){ %>
-                <p class="error" style="display:flex">Invalid Email Entered</p>
+                <% if (eType == 1) { %>
+                    <p class="error" style="display:flex">This Email is already registered</p>
+                <% } else { %>
+                    <p class="error" style="display:flex">Invalid Email Entered</p>
+                <% } %>
             <% } else{ %>
                 <p class="error" style="display:none">Invalid Email Entered</p>
             <% } %>
